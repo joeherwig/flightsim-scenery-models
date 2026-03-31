@@ -1,0 +1,234 @@
+<!DOCTYPE html><html><head>
+      <title>Readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\joach\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.22\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="msfs-2024-scenery-object-naming-convention--build-process-guide">MSFS 2024 Scenery Object Naming Convention &amp; Build Process Guide </h1>
+<hr>
+<h2 id="introduction">Introduction </h2>
+<p>This document outlines the recommended naming convention and build process for scenery objects (textures, models, libraries, XML files) created by JOE simtech for Microsoft Flight Simulator 2024 (MSFS-2024). The primary goal is to ensure compatibility, avoid conflicts with other add-ons, and maintain a clear, organized structure.</p>
+<p><strong>Official SDK Reference:</strong></p>
+<ul>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/1_Introduction/Introduction.htm">MSFS 2024 SDK Documentation - Introduction</a></li>
+</ul>
+<hr>
+<h2 id="workspace-setup">Workspace-Setup </h2>
+<h3 id="development-folders">Development Folders </h3>
+<p>I've good experience with setting up a project workspace for the creation of my personal projects. They're located in a folder</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>%UserProfile%/
+└── projects
+    ├── flightsim-scenery-models
+    └── fsprojects
+</code></pre><p>Where<br>
+<strong><code>flightsim-scenery-models</code></strong> contains the blender data in the form for each asset for instance</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>%UserProfile%/
+└── projects
+    ├── flightsim-scenery-models
+    │   ├── assets
+    │   │   └── CLU
+    │   │       └── waste-bin-120l
+    │   │           ├── blender-textures
+    │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Black.png
+    │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Blue.png
+    │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Green.png
+    │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Grey.png
+    │   │           │   ├── xyz_clu_waste-bin-120l_metallicRoughness.png
+    │   │           │   └── xyz_clu_waste-bin-120l_normal.png
+    │   │           └── waste-bin-120l.blend
+    │   └── texture-shared
+    │       └── xyz_metal_sheet_box-profile_baseColor-orange-corrogated.png
+    │       └── xyz_metal_sheet_box-profile_metallicRoughness.png
+    │       └── xyz_metal_sheet_box-profile_normal.png
+    └── fsprojects
+        └── {ProjectName}
+                └── PackageSources
+                        └── {LibraryName}
+                            └── Scenery
+                                └── {LibraryName}
+                                    └── {ModelName}
+                                    └── {ModelName2}
+                                    └── {ModelName3}
+                                    └── texture 
+</code></pre><p>While <strong><code>fsprojects</code></strong> is the place where MSFS Developer Mode is saving the WIP Projects.<br>
+So I'm splitting modeling/textureing and libraray-generation/object-placement deliberately to two different folders.</p>
+<hr>
+<h3 id="tools">Tools </h3>
+<p>I'm using:</p>
+<h4 id="blender-for-3d-models">Blender for 3D models </h4>
+<p>with the <a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Plugins/Blender_Plugin/The_Blender_Plugin.htm">io_scene_gltf2_msfs_2024</a> plugin from MSFS 2024 SDK<br>
+Currently there seem to be some issues with latest Blender versions so I currently use 3.6 LTS successfully with the SDK gltf exporter plugin<br>
+To export models using the SDK gltf Plugin, define as export-path</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>%UserProfile%\projects\fsprojects\{ProjectName}\PackageSources\{LibraryName}\Scenery\{LibraryName}\{ModelName}\
+</code></pre><h5 id="lods">LODs </h5>
+<p>Ensure you create LOD optimized models to reduce the poping effect and keep performance good in your sceneries. See <a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Modeling/LODs/LOD_Technical_Information.htm">LODs in the SDK documentation</a>.</p>
+<h4 id="gimp--inkscape">GIMP &amp; Inkscape </h4>
+<p>for texturing. No need to buy expensive tools if you can use donation ware.<br>
+⚠️ Ensure you <strong>respect the <a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Texturing_Technical_Info.htm">texturing guidelines</a></strong> from MSFS SDK documentation!</p>
+<p><strong>texture naming</strong><br>
+It is strongly recommended to adhere to the recommendation to use clear unique naming conventions as generic names <a href="https://forums.flightsimulator.com/t/texture-naming-be-sure-to-use-unique-names/447057">are prone to cause problems</a> in case someone else used the same names in their projects as well.</p>
+<h4 id="microsoft-powertoys">Microsoft PowerToys </h4>
+<p>for batch-renaming for instance if I downloaded free textures it makes sense to use PowerRename from the Microsoft PowerToys package.</p>
+<h3 id="versioning">Versioning </h3>
+<p>I strongly recommend to make use of <a href="https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control">Git</a> as versioning system to ensure you have a valid history in case you inadvertently distroy something.</p>
+<h3 id="fair-use--legal">Fair use / legal </h3>
+<p>Keep in Mind that if you download or modify assets from others (models/textures/effects etc.) they might be under a special license like CC-BY-SA-NC and thus need to be respected. It's on you to ensure properly licensed useage!</p>
+<hr>
+<h2 id="rationale">Rationale </h2>
+<ul>
+<li><strong>Author Prefix (xyz_):</strong> Adding a unique author prefix (e.g., xyz_) to all object names and folder names is crucial. It prevents file name collisions between different creators' add-ons, ensuring your assets are loaded correctly and uniquely identified. This is a standard recommended practice by Asobo.</li>
+<li><strong>Category Prefix (3-Char Code):</strong> Using a three-character code at the beginning of object names (or within folder structures where appropriate) clearly categorizes the object's content (e.g., City, Clutter, Airport). This aids in organization and helps the loading system understand the object's purpose.
+<ul>
+<li>ARP ➜ airport</li>
+<li>BLD ➜ building</li>
+<li>CLU ➜ clutter</li>
+<li>CTY ➜ city</li>
+<li>EFF ➜ effect</li>
+<li>VEG ➜ vegetation</li>
+<li>VEH ➜ vehicle</li>
+<li>SIG ➜ signs (road signs - company signs)</li>
+</ul>
+</li>
+<li><strong>ICAO Code</strong> (for Airports): <strong>UN/LOCODE</strong> for location specific objects<br>
+ICAO code (e.g., EDDI, KLAX) only if applicable. - In case of location specific city/non-ARP models it is recommended to use the <a href="https://unece.org/trade/cefact/unlocode-code-list-country-and-territory">UN/LOCODE</a> standard. It is well known in aviation as the IATA airport codes use often the LoCode (LEJ ➜ Leipzig, STR = Stuttgart, FRA ➜ Frankfurt, HAM ➜ Hamburg etc.) Including the ICAO code (e.g., EDDI, KLAX) in the sub-folder names or object names for airport-related items (like runways, taxiways, ramps, buildings) links the object directly to a specific airport location. This is essential for proper placement and loading.</li>
+<li><strong>PBR Texture Standard:</strong> Using the PBR (Principle-Based Rendering) texture naming convention ensures consistency with modern rendering pipelines and makes it easier to manage materials.</li>
+</ul>
+<p><strong>Official SDK Reference:</strong></p>
+<ul>
+<li><a href="https://docs.flightsimulator.com/html/Samples_And_Tutorials/Tutorials/Creating_Or_Replacing_An_Airport.htm">Creating Or Replacing An Airport - SDK Documentation</a></li>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Materials/FlightSim_Materials.htm">FlightSim Materials - SDK Documentation</a></li>
+</ul>
+<hr>
+<h2 id="folder-structure">Folder Structure </h2>
+<ul>
+<li><strong>Project Structure:</strong> Assets are organized within the <code>fsprojects\&lt;projectName&gt;\PackageSources\Scenery\&lt;assetGroupName&gt;</code> directory structure.</li>
+<li><strong>Texture Export:</strong> Export textures directly to <code>..\texture</code> from Blender export setup. That ensures that all commonly used textures in a library on multiple objects will be there just once.<br>
+So</li>
+<li><strong>Model Export:</strong> Export Blender models directly to <code>fsprojects\&lt;projectName&gt;\PackageSources\Scenery\&lt;assetGroupName&gt;</code>.</li>
+</ul>
+<p><strong>Official SDK Reference:</strong></p>
+<ul>
+<li><a href="https://docs.flightsimulator.com/msfs2024/flighting/html/1_Introduction/Using_The_SDK.htm">Using The SDK - SDK Documentation</a></li>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/8_SDK_Tools/Package_Tool/Components_And_Concepts.htm">Components And Concepts - Package Tool</a></li>
+</ul>
+<hr>
+<h2 id="texture-naming-convention-pbr">Texture Naming Convention (PBR) </h2>
+<ul>
+<li><strong>Base Color (Albedo RGBA):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_baseColor{optional: _styleVariant}.png</code></li>
+<li><strong>Occlusion(R) Roughness(G) Metallic(B):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_metallicRoughness.png</code></li>
+<li><strong>Normal Map:</strong> <code>{creatorShortcut}_{Category}_{ModelName}_normal.png</code></li>
+<li><strong>Emissive (Optional):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_emissive.png</code></li>
+<li><strong>Detail Color(RGB) Alpha(A) (Optional):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_detail.png</code></li>
+<li><strong>Detail Occlusion(R) Roughness(G) Metallic(B) (Optional):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_dORM.png</code></li>
+</ul>
+<p><strong>Where:</strong></p>
+<ul>
+<li><code>{creatorShortcut}</code>: Your unique creator identifier (e.g., xyz)</li>
+<li><code>{Category}</code>: 3-letter category code (e.g., CLU, CTY, ARP, BLD, VEH)</li>
+<li><code>{ModelName}</code>: Name of the model</li>
+<li><code>{optional: _styleVariant}</code>: Optional suffix for different variants of the same model (e.g., _blue, _large)</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>xyz_CLU_waste-bin_baseColor_silver.png</code></li>
+<li><code>xyz_CLU_waste-bin_metallicRoughness.png</code></li>
+<li><code>xyz_CLU_waste-bin_normal.png</code></li>
+<li><code>xyz_CTY_building_baseColor_512.png</code></li>
+<li><code>xyz_ARP_EDDS_terminal3_emissive.png</code></li>
+</ul>
+<p><strong>Official SDK Reference:</strong></p>
+<ul>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/5_Content_Configuration/Textures/Textures.htm">Textures - SDK Documentation</a></li>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Materials/FlightSim_Materials.htm">FlightSim Materials - SDK Documentation</a></li>
+</ul>
+<hr>
+<h2 id="model-file-gltf--obj-naming-convention">Model File (.gltf / .obj) Naming Convention </h2>
+<p><strong>General Pattern:</strong><br>
+<code>{Category}_{ICAO_or_LOCODE_IfExists}_{ModelName}</code></p>
+<p><strong>Where:</strong></p>
+<ul>
+<li><code>{Category}</code>: 3-letter category code (e.g., CLU, CTY, ARP, BLD, VEH)</li>
+<li><code>{ICAO_or_LOCODE_IfExists}</code>: ICAO code (e.g., EDDI, KLAX) only if applicable. - In case of location specific city/non-ARP models it is recommended to use the <a href="https://unece.org/trade/cefact/unlocode-code-list-country-and-territory">UN/LOCODE</a> standard. It is well known in aviation as the IATA airport codes use often the LoCode (LEJ ➜ Leipzig, STR = Stuttgart, FRA ➜ Frankfurt, HAM ➜ Hamburg etc.)</li>
+<li><code>{ModelName}</code>: Name of the model</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>CLU_waste-bin.obj</code></li>
+<li><code>CTY_DE-HAM_city-hall.gltf</code></li>
+<li><code>CTY_DE-STR_tv-tower.gltf</code></li>
+<li><code>ARP_EDDS_terminal3.gltf</code></li>
+<li><code>ARP_EDDS_terminal3.gltf</code></li>
+</ul>
+<p><strong>Official SDK Reference:</strong></p>
+<ul>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/5_Content_Configuration/Models/Models.htm">Models - SDK Documentation</a></li>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Modeling/Aircraft/Model_Exporting.htm?agt=index">Model Exporting - SDK Documentation</a></li>
+</ul>
+<hr>
+<h2 id="library-naming-convention">Library Naming Convention </h2>
+<p><strong>General Pattern:</strong><br>
+is used to name the library being created from SDK. When rendered it will be prefixed with the creator-prefix automatically helping to identify the library on object selection.<br>
+<code>{Category}_{ICAO_or_LOCODE_IfExists}_{LibraryName}</code></p>
+<p><strong>Where:</strong></p>
+<ul>
+<li><code>{Category}</code>: 3-letter category code (e.g., CLU, CTY, ARP, BLD, VEH)</li>
+<li><code>{ICAO_or_LOCODE_IfExists}</code>: ICAO or UN/LOCODE (e.g., EDDL, KLAX, DE-MUC) only if applicable</li>
+<li><code>{LibraryName}</code>: Name of the library</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>CLU_DE_apron</code> (will be exported as <code>CLU_DE_apron.bgl</code>)</li>
+<li><code>ARP_EDDM_Terminals</code></li>
+<li><code>CTY_DE-VER_buildings</code></li>
+</ul>
+<hr>
+<h2 id="links">Links </h2>
+<p><strong>Official SDK Reference:</strong></p>
+<ul>
+<li><a href="https://docs.flightsimulator.com/msfs2024/html/8_SDK_Tools/Package_Tool/Components_And_Concepts.htm">Components And Concepts - Package Tool</a></li>
+</ul>
+<h3 id="asset-sources">Asset sources </h3>
+<p><strong>Model sources</strong></p>
+<ul>
+<li><a href="https://sketchfab.com/&amp;type=models">sketchfab.com</a></li>
+<li><a href="https://www.cgtrader.com/">cgtrader.com</a></li>
+</ul>
+<p><strong>PBR Material Sources</strong></p>
+<ul>
+<li><a href="https://freepbr.com/">freepbr.com</a></li>
+<li><a href="https://www.a23d.co/textures/free-materials">a23d.co</a></li>
+<li><a href="https://polyhaven.com/textures">polyhaven.com</a></li>
+</ul>
+<p>©️ by Joachim Herwig - Licensed: CC-BY-NC-SA</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
