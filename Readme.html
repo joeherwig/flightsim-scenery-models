@@ -24,25 +24,26 @@
     <body for="html-export">
       <div class="crossnote markdown-preview  ">
       
-<h1 id="msfs-2024-scenery-object-naming-convention--build-process-guide">MSFS 2024 Scenery Object Naming Convention &amp; Build Process Guide </h1>
+<h1>MSFS 2024 Scenery Object Naming Convention &amp; Build Process Guide</h1>
 <hr>
-<h2 id="introduction">Introduction </h2>
+<h2>Introduction</h2>
 <p>This document outlines the recommended naming convention and build process for scenery objects (textures, models, libraries, XML files) created by JOE simtech for Microsoft Flight Simulator 2024 (MSFS-2024). The primary goal is to ensure compatibility, avoid conflicts with other add-ons, and maintain a clear, organized structure.</p>
 <p><strong>Official SDK Reference:</strong></p>
 <ul>
 <li><a href="https://docs.flightsimulator.com/msfs2024/html/1_Introduction/Introduction.htm">MSFS 2024 SDK Documentation - Introduction</a></li>
 </ul>
 <hr>
-<h2 id="workspace-setup">Workspace-Setup </h2>
+<h2>Workspace-Setup</h2>
 <h3 id="development-folders">Development Folders </h3>
 <p>I've good experience with setting up a project workspace for the creation of my personal projects. They're located in a folder</p>
-<pre data-role="codeBlock" data-info="" class="language-text"><code>%UserProfile%/
+<pre class="language-text">%UserProfile%/
 └── projects
     ├── flightsim-scenery-models
     └── fsprojects
-</code></pre><p>Where<br>
+</pre>
+<p>Where<br>
 <strong><code>flightsim-scenery-models</code></strong> contains the blender data in the form for each asset for instance</p>
-<pre data-role="codeBlock" data-info="" class="language-text"><code>%UserProfile%/
+<pre class="language-text">%UserProfile%/
 └── projects
     ├── flightsim-scenery-models
     │   ├── assets
@@ -70,7 +71,8 @@
                                     └── {ModelName2}
                                     └── {ModelName3}
                                     └── texture 
-</code></pre><p>While <strong><code>fsprojects</code></strong> is the place where MSFS Developer Mode is saving the WIP Projects.<br>
+</pre>
+<p>While <strong><code>fsprojects</code></strong> is the place where MSFS Developer Mode is saving the WIP Projects.<br>
 So I'm splitting modeling/textureing and libraray-generation/object-placement deliberately to two different folders.</p>
 <hr>
 <h3 id="tools">Tools </h3>
@@ -79,8 +81,9 @@ So I'm splitting modeling/textureing and libraray-generation/object-placement de
 <p>with the <a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Plugins/Blender_Plugin/The_Blender_Plugin.htm">io_scene_gltf2_msfs_2024</a> plugin from MSFS 2024 SDK<br>
 Currently there seem to be some issues with latest Blender versions so I currently use 3.6 LTS successfully with the SDK gltf exporter plugin<br>
 To export models using the SDK gltf Plugin, define as export-path</p>
-<pre data-role="codeBlock" data-info="" class="language-text"><code>%UserProfile%\projects\fsprojects\{ProjectName}\PackageSources\{LibraryName}\Scenery\{LibraryName}\{ModelName}\
-</code></pre><h5 id="lods">LODs </h5>
+<pre class="language-text">%UserProfile%\projects\fsprojects\{ProjectName}\PackageSources\{LibraryName}\Scenery\{LibraryName}\{ModelName}\
+</pre>
+<h5 id="lods">LODs </h5>
 <p>Ensure you create LOD optimized models to reduce the poping effect and keep performance good in your sceneries. See <a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Modeling/LODs/LOD_Technical_Information.htm">LODs in the SDK documentation</a>.</p>
 <h4 id="gimp--inkscape">GIMP &amp; Inkscape </h4>
 <p>for texturing. No need to buy expensive tools if you can use donation ware.<br>
@@ -94,7 +97,7 @@ It is strongly recommended to adhere to the recommendation to use clear unique n
 <h3 id="fair-use--legal">Fair use / legal </h3>
 <p>Keep in Mind that if you download or modify assets from others (models/textures/effects etc.) they might be under a special license like CC-BY-SA-NC and thus need to be respected. It's on you to ensure properly licensed useage!</p>
 <hr>
-<h2 id="rationale">Rationale </h2>
+<h2>Rationale</h2>
 <ul>
 <li><strong>Author Prefix (xyz_):</strong> Adding a unique author prefix (e.g., xyz_) to all object names and folder names is crucial. It prevents file name collisions between different creators' add-ons, ensuring your assets are loaded correctly and uniquely identified. This is a standard recommended practice by Asobo.</li>
 <li><strong>Category Prefix (3-Char Code):</strong> Using a three-character code at the beginning of object names (or within folder structures where appropriate) clearly categorizes the object's content (e.g., City, Clutter, Airport). This aids in organization and helps the loading system understand the object's purpose.
@@ -119,7 +122,7 @@ ICAO code (e.g., EDDI, KLAX) only if applicable. - In case of location specific 
 <li><a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Materials/FlightSim_Materials.htm">FlightSim Materials - SDK Documentation</a></li>
 </ul>
 <hr>
-<h2 id="folder-structure">Folder Structure </h2>
+<h2>Folder Structure</h2>
 <ul>
 <li><strong>Project Structure:</strong> Assets are organized within the <code>fsprojects\&lt;projectName&gt;\PackageSources\Scenery\&lt;assetGroupName&gt;</code> directory structure.</li>
 <li><strong>Texture Export:</strong> Export textures directly to <code>..\texture</code> from Blender export setup. That ensures that all commonly used textures in a library on multiple objects will be there just once.<br>
@@ -132,7 +135,7 @@ So</li>
 <li><a href="https://docs.flightsimulator.com/msfs2024/html/8_SDK_Tools/Package_Tool/Components_And_Concepts.htm">Components And Concepts - Package Tool</a></li>
 </ul>
 <hr>
-<h2 id="texture-naming-convention-pbr">Texture Naming Convention (PBR) </h2>
+<h2>Texture Naming Convention (PBR)</h2>
 <ul>
 <li><strong>Base Color (Albedo RGBA):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_baseColor{optional: _styleVariant}.png</code></li>
 <li><strong>Occlusion(R) Roughness(G) Metallic(B):</strong> <code>{creatorShortcut}_{Category}_{ModelName}_metallicRoughness.png</code></li>
@@ -162,7 +165,7 @@ So</li>
 <li><a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Materials/FlightSim_Materials.htm">FlightSim Materials - SDK Documentation</a></li>
 </ul>
 <hr>
-<h2 id="model-file-gltf--obj-naming-convention">Model File (.gltf / .obj) Naming Convention </h2>
+<h2>Model File (.gltf / .obj) Naming Convention</h2>
 <p><strong>General Pattern:</strong><br>
 <code>{Category}_{ICAO_or_LOCODE_IfExists}_{ModelName}</code></p>
 <p><strong>Where:</strong></p>
@@ -185,7 +188,7 @@ So</li>
 <li><a href="https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Modeling/Aircraft/Model_Exporting.htm?agt=index">Model Exporting - SDK Documentation</a></li>
 </ul>
 <hr>
-<h2 id="library-naming-convention">Library Naming Convention </h2>
+<h2>Library Naming Convention</h2>
 <p><strong>General Pattern:</strong><br>
 is used to name the library being created from SDK. When rendered it will be prefixed with the creator-prefix automatically helping to identify the library on object selection.<br>
 <code>{Category}_{ICAO_or_LOCODE_IfExists}_{LibraryName}</code></p>
@@ -202,7 +205,7 @@ is used to name the library being created from SDK. When rendered it will be pre
 <li><code>CTY_DE-VER_buildings</code></li>
 </ul>
 <hr>
-<h2 id="links">Links </h2>
+<h2>Links</h2>
 <p><strong>Official SDK Reference:</strong></p>
 <ul>
 <li><a href="https://docs.flightsimulator.com/msfs2024/html/8_SDK_Tools/Package_Tool/Components_And_Concepts.htm">Components And Concepts - Package Tool</a></li>
