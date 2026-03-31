@@ -1,0 +1,244 @@
+{
+    "asset": {
+        "extensions": {
+            "ASOBO_normal_map_convention": {
+                "tangent_space_convention": "DirectX"
+            }
+        },
+        "generator": "Khronos glTF Blender I/O v3.6.28 and Asobo Studio MSFS2024 Blender I/O v5.4.7 with Blender v3.6.23",
+        "version": "2.0"
+    },
+    "extensionsUsed": [
+        "ASOBO_normal_map_convention",
+        "ASOBO_unique_id",
+        "ASOBO_material_flip_back_face"
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extensions": {
+                "ASOBO_unique_id": {
+                    "id": ""
+                }
+            },
+            "mesh": 0,
+            "name": "TrashCan_Black_TrashCan(Black)_0",
+            "scale": [
+                0.007069852668792009,
+                0.007069854065775871,
+                0.007069854065775871
+            ],
+            "translation": [
+                -0.0017462982796132565,
+                -33.88899612426758,
+                -4.553285634756321e-06
+            ]
+        },
+        {
+            "children": [
+                0
+            ],
+            "extensions": {
+                "ASOBO_unique_id": {
+                    "id": ""
+                }
+            },
+            "name": "TrashCan_Black",
+            "rotation": [
+                -0.70710688829422,
+                0,
+                0,
+                0.7071066498756409
+            ],
+            "translation": [
+                0,
+                0,
+                -33.963356018066406
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": true,
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "extensions": {
+                "ASOBO_material_flip_back_face": {
+                    "enabled": true
+                }
+            },
+            "extras": {},
+            "name": "TrashCanBlack",
+            "normalTexture": {
+                "index": 0,
+                "scale": 1
+            },
+            "occlusionTexture": {
+                "index": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 2
+                },
+                "metallicFactor": 1,
+                "metallicRoughnessTexture": {
+                    "index": 1
+                },
+                "roughnessFactor": 1
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "TrashCan_Black_TrashCan(Black)_0",
+            "primitives": [
+                {
+                    "attributes": {
+                        "COLOR_0": 0,
+                        "POSITION": 1,
+                        "NORMAL": 2,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "mimeType": "image/png",
+            "name": "TrashCanGrey_normal",
+            "uri": "..\\texture\\TrashCanGrey_normal.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "jst_clu_waste-bin-120l_comp",
+            "uri": "..\\texture\\jst_clu_waste-bin-120l_comp.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "jst_clu_waste-bin-120l_baseColor-Grey",
+            "uri": "..\\texture\\jst_clu_waste-bin-120l_baseColor-Grey.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5123,
+            "count": 1086,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 1086,
+            "max": [
+                32.13014221191406,
+                29.479846954345703,
+                113.1099853515625
+            ],
+            "min": [
+                -28.69991683959961,
+                -29.479846954345703,
+                -3.814697265625e-06
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 2940,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 8688,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 13032,
+            "byteOffset": 8688,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 13032,
+            "byteOffset": 21720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8688,
+            "byteOffset": 34752,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5880,
+            "byteOffset": 43440,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 49320,
+            "uri": "waste-bin-120l-grey_LOD0.bin"
+        }
+    ]
+}

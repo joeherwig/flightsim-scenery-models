@@ -41,12 +41,12 @@ Where
         │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Blue.png
         │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Green.png
         │   │           │   ├── xyz_clu_waste-bin-120l_baseColor-Grey.png
-        │   │           │   ├── xyz_clu_waste-bin-120l_metallicRoughness.png
+        │   │           │   ├── xyz_clu_waste-bin-120l_comp.png
         │   │           │   └── xyz_clu_waste-bin-120l_normal.png
         │   │           └── waste-bin-120l.blend
         │   └── texture-shared
         │       └── xyz_metal_sheet_box-profile_baseColor-orange-corrogated.png
-        │       └── xyz_metal_sheet_box-profile_metallicRoughness.png
+        │       └── xyz_metal_sheet_box-profile_comp.png
         │       └── xyz_metal_sheet_box-profile_normal.png
         └── fsprojects
             └── {ProjectName}
@@ -147,7 +147,7 @@ Texture Naming Convention (PBR)
 -------------------------------
 
 *   **Base Color (Albedo RGBA):** `{creatorShortcut}_{Category}_{ModelName}_baseColor{optional: _styleVariant}.png`
-*   **Occlusion(R) Roughness(G) Metallic(B):** `{creatorShortcut}_{Category}_{ModelName}_metallicRoughness.png`
+*   **Occlusion(R) Roughness(G) Metallic(B):** `{creatorShortcut}_{Category}_{ModelName}_comp.png`
 *   **Normal Map:** `{creatorShortcut}_{Category}_{ModelName}_normal.png`
 *   **Emissive (Optional):** `{creatorShortcut}_{Category}_{ModelName}_emissive.png`
 *   **Detail Color(RGB) Alpha(A) (Optional):** `{creatorShortcut}_{Category}_{ModelName}_detail.png`
@@ -163,7 +163,7 @@ Texture Naming Convention (PBR)
 **Examples:**
 
 *   `xyz_CLU_waste-bin_baseColor_silver.png`
-*   `xyz_CLU_waste-bin_metallicRoughness.png`
+*   `xyz_CLU_waste-bin_comp.png`
 *   `xyz_CLU_waste-bin_normal.png`
 *   `xyz_CTY_building_baseColor_512.png`
 *   `xyz_ARP_EDDS_terminal3_emissive.png`

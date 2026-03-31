@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ModelInfo guid="{8b18f503-faeb-45ce-bfac-dd24c776eee9}" version="1.1">
-	<LODS>
-		<LOD minSize="0.0" ModelFile="waste-bin-120l-black_LOD0.gltf"/>
-		<LOD minSize="0.0" ModelFile="waste-bin-120l-black_LOD1.gltf"/>
-	</LODS>
-</ModelInfo>
