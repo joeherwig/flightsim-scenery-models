@@ -2,3 +2,4 @@
 .vscode
 # Ignore all .blend1 blender backup files recursively
 **/*.blend1
+create-msfsSceneryDesignStructure.ps1
