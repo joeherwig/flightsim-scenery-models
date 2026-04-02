@@ -1,23 +1,19 @@
 MSFS 2024 Scenery Object Naming Convention & Build Process Guide
 ================================================================
-
-* * *
-
-Introduction
-------------
+---------------
+# Introduction
+---------------
 
 This document outlines the recommended naming convention and build process for scenery objects (textures, models, libraries, XML files) created by JOE simtech for Microsoft Flight Simulator 2024 (MSFS-2024). The primary goal is to ensure compatibility, avoid conflicts with other add-ons, and maintain a clear, organized structure.
 
 **Official SDK Reference:**
 
 *   [MSFS 2024 SDK Documentation - Introduction](https://docs.flightsimulator.com/msfs2024/html/1_Introduction/Introduction.htm)
-
-* * *
-
-Workspace-Setup
+---------------
+# Workspace-Setup
 ---------------
 
-### Development Folders
+## Development Folders
 
 I've good experience with setting up a project workspace for the creation of my personal projects. They're located in a folder
 
@@ -63,13 +59,12 @@ Where
 While **`fsprojects`** is the place where MSFS Developer Mode is saving the WIP Projects.  
 So I'm splitting modeling/textureing and libraray-generation/object-placement deliberately to two different folders.
 
-* * *
-
-### Tools
-
+---------------
+# Tools
+---------------
 I'm using:
 
-#### Blender for 3D models
+## Blender for 3D models
 
 with the [io\_scene\_gltf2\_msfs\_2024](https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Plugins/Blender_Plugin/The_Blender_Plugin.htm) plugin from MSFS 2024 SDK  
 Currently there seem to be some issues with latest Blender versions so I currently use 3.6 LTS successfully with the SDK gltf exporter plugin  
@@ -78,11 +73,11 @@ To export models using the SDK gltf Plugin, define as export-path
     %UserProfile%\projects\fsprojects\{ProjectName}\PackageSources\{LibraryName}\Scenery\{LibraryName}\{ModelName}\
     
 
-##### LODs
+### LODs
 
 Ensure you create LOD optimized models to reduce the poping effect and keep performance good in your sceneries. See [LODs in the SDK documentation](https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Modeling/LODs/LOD_Technical_Information.htm).
 
-#### GIMP & Inkscape
+## GIMP & Inkscape
 
 for texturing. No need to buy expensive tools if you can use donation ware.  
 ⚠️ Ensure you **respect the [texturing guidelines](https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Texturing_Technical_Info.htm)** from MSFS SDK documentation!
@@ -90,22 +85,22 @@ for texturing. No need to buy expensive tools if you can use donation ware.
 **texture naming**  
 It is strongly recommended to adhere to the recommendation to use clear unique naming conventions as generic names [are prone to cause problems](https://forums.flightsimulator.com/t/texture-naming-be-sure-to-use-unique-names/447057) in case someone else used the same names in their projects as well.
 
-#### Microsoft PowerToys
+## Microsoft PowerToys
 
 for batch-renaming for instance if I downloaded free textures it makes sense to use PowerRename from the Microsoft PowerToys package.
 
-### Versioning
+## Versioning
 
 I strongly recommend to make use of [Git](https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control) as versioning system to ensure you have a valid history in case you inadvertently distroy something.
 
-### Fair use / legal
-
+---------------
+# Fair use / legal
+---------------
 Keep in Mind that if you download or modify assets from others (models/textures/effects etc.) they might be under a special license like CC-BY-SA-NC and thus need to be respected. It's on you to ensure properly licensed useage!
 
-* * *
-
-Rationale
----------
+---------------
+# Rationale
+---------------
 
 *   **Author Prefix (xyz\_):** Adding a unique author prefix (e.g., xyz\_) to all object names and folder names is crucial. It prevents file name collisions between different creators' add-ons, ensuring your assets are loaded correctly and uniquely identified. This is a standard recommended practice by Asobo.
 *   **Category Prefix (3-Char Code):** Using a three-character code at the beginning of object names (or within folder structures where appropriate) clearly categorizes the object's content (e.g., City, Clutter, Airport). This aids in organization and helps the loading system understand the object's purpose.
@@ -126,10 +121,8 @@ Rationale
 *   [Creating Or Replacing An Airport - SDK Documentation](https://docs.flightsimulator.com/html/Samples_And_Tutorials/Tutorials/Creating_Or_Replacing_An_Airport.htm)
 *   [FlightSim Materials - SDK Documentation](https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Materials/FlightSim_Materials.htm)
 
-* * *
-
-Folder Structure
 ----------------
+## Folder Structure
 
 *   **Project Structure:** Assets are organized within the `fsprojects\<projectName>\PackageSources\Scenery\<assetGroupName>` directory structure.
 *   **Texture Export:** Export textures directly to `..\texture` from Blender export setup. That ensures that all commonly used textures in a library on multiple objects will be there just once.  
@@ -141,10 +134,9 @@ Folder Structure
 *   [Using The SDK - SDK Documentation](https://docs.flightsimulator.com/msfs2024/flighting/html/1_Introduction/Using_The_SDK.htm)
 *   [Components And Concepts - Package Tool](https://docs.flightsimulator.com/msfs2024/html/8_SDK_Tools/Package_Tool/Components_And_Concepts.htm)
 
-* * *
+---
 
-Texture Naming Convention (PBR)
--------------------------------
+## Texture Naming Convention (PBR)
 
 *   **Base Color (Albedo RGBA):** `{creatorShortcut}_{Category}_{ModelName}_baseColor{optional: _styleVariant}.png`
 *   **Occlusion(R) Roughness(G) Metallic(B):** `{creatorShortcut}_{Category}_{ModelName}_comp.png`
@@ -173,11 +165,9 @@ Texture Naming Convention (PBR)
 *   [Textures - SDK Documentation](https://docs.flightsimulator.com/msfs2024/html/5_Content_Configuration/Textures/Textures.htm)
 *   [FlightSim Materials - SDK Documentation](https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Textures/Materials/FlightSim_Materials.htm)
 
-* * *
-
-Model File (.gltf / .obj) Naming Convention
--------------------------------------------
-
+---------------
+## Model File (.gltf / .obj) Naming Convention
+---------------
 **General Pattern:**  
 `{Category}_{ICAO_or_LOCODE_IfExists}_{ModelName}`
 
@@ -200,11 +190,9 @@ Model File (.gltf / .obj) Naming Convention
 *   [Models - SDK Documentation](https://docs.flightsimulator.com/msfs2024/html/5_Content_Configuration/Models/Models.htm)
 *   [Model Exporting - SDK Documentation](https://docs.flightsimulator.com/msfs2024/html/3_Models_And_Textures/Modeling/Aircraft/Model_Exporting.htm?agt=index)
 
-* * *
-
-Library Naming Convention
--------------------------
-
+---------------
+## Library Naming Convention
+---------------
 **General Pattern:**  
 is used to name the library being created from SDK. When rendered it will be prefixed with the creator-prefix automatically helping to identify the library on object selection.  
 `{Category}_{ICAO_or_LOCODE_IfExists}_{LibraryName}`
@@ -221,11 +209,9 @@ is used to name the library being created from SDK. When rendered it will be pre
 *   `ARP_EDDM_Terminals`
 *   `CTY_DE-VER_buildings`
 
-* * *
-
-Links
------
-
+---------------
+## Links
+---------------
 **Official SDK Reference:**
 
 *   [Components And Concepts - Package Tool](https://docs.flightsimulator.com/msfs2024/html/8_SDK_Tools/Package_Tool/Components_And_Concepts.htm)
