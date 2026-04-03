@@ -1054,20 +1054,20 @@
         {
             "bufferView": 48,
             "componentType": 5126,
-            "count": 1297,
+            "count": 2179,
             "type": "VEC4"
         },
         {
             "bufferView": 49,
             "componentType": 5126,
-            "count": 1297,
+            "count": 2179,
             "max": [
-                1.1962933540344238,
+                1.1962260007858276,
                 0.9881428480148315,
                 -0.013002276420593262
             ],
             "min": [
-                0.9716189503669739,
+                0.9716525077819824,
                 0.2121904194355011,
                 -2.311077117919922
             ],
@@ -1076,59 +1076,59 @@
         {
             "bufferView": 50,
             "componentType": 5126,
-            "count": 1297,
+            "count": 2179,
             "type": "VEC3"
         },
         {
             "bufferView": 51,
             "componentType": 5126,
-            "count": 1297,
+            "count": 2179,
             "type": "VEC2"
         },
         {
             "bufferView": 52,
             "componentType": 5123,
-            "count": 1827,
+            "count": 3663,
             "type": "SCALAR"
         },
         {
             "bufferView": 53,
             "componentType": 5126,
-            "count": 1300,
+            "count": 2179,
             "type": "VEC4"
         },
         {
             "bufferView": 54,
             "componentType": 5126,
-            "count": 1300,
+            "count": 2179,
             "max": [
-                -0.9715982675552368,
+                -0.9716525077819824,
                 0.9881428480148315,
                 -0.013002276420593262
             ],
             "min": [
-                -1.1962933540344238,
+                -1.1962260007858276,
                 0.2121904194355011,
-                -2.311084747314453
+                -2.311077117919922
             ],
             "type": "VEC3"
         },
         {
             "bufferView": 55,
             "componentType": 5126,
-            "count": 1300,
+            "count": 2179,
             "type": "VEC3"
         },
         {
             "bufferView": 56,
             "componentType": 5126,
-            "count": 1300,
+            "count": 2179,
             "type": "VEC2"
         },
         {
             "bufferView": 57,
             "componentType": 5123,
-            "count": 1824,
+            "count": 3663,
             "type": "SCALAR"
         }
     ],
@@ -1423,62 +1423,62 @@
         },
         {
             "buffer": 0,
-            "byteLength": 20752,
+            "byteLength": 34864,
             "byteOffset": 881128,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 15564,
-            "byteOffset": 901880,
+            "byteLength": 26148,
+            "byteOffset": 915992,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 15564,
-            "byteOffset": 917444,
+            "byteLength": 26148,
+            "byteOffset": 942140,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 10376,
-            "byteOffset": 933008,
+            "byteLength": 17432,
+            "byteOffset": 968288,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 3654,
-            "byteOffset": 943384,
+            "byteLength": 7326,
+            "byteOffset": 985720,
             "target": 34963
         },
         {
             "buffer": 0,
-            "byteLength": 20800,
-            "byteOffset": 947040,
+            "byteLength": 34864,
+            "byteOffset": 993048,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 15600,
-            "byteOffset": 967840,
+            "byteLength": 26148,
+            "byteOffset": 1027912,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 15600,
-            "byteOffset": 983440,
+            "byteLength": 26148,
+            "byteOffset": 1054060,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 10400,
-            "byteOffset": 999040,
+            "byteLength": 17432,
+            "byteOffset": 1080208,
             "target": 34962
         },
         {
             "buffer": 0,
-            "byteLength": 3648,
-            "byteOffset": 1009440,
+            "byteLength": 7326,
+            "byteOffset": 1097640,
             "target": 34963
         }
     ],
@@ -1490,7 +1490,7 @@
     ],
     "buffers": [
         {
-            "byteLength": 1013088,
+            "byteLength": 1104968,
             "uri": "ifor-williams-HBX506_LOD0.bin"
         }
     ]

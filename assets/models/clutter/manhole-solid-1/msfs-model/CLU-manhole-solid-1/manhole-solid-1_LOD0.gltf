@@ -1,0 +1,206 @@
+{
+    "asset": {
+        "extensions": {
+            "ASOBO_normal_map_convention": {
+                "tangent_space_convention": "DirectX"
+            }
+        },
+        "generator": "Khronos glTF Blender I/O v3.6.28 and Asobo Studio MSFS2024 Blender I/O v5.4.7 with Blender v3.6.23",
+        "version": "2.0"
+    },
+    "extensionsUsed": [
+        "ASOBO_normal_map_convention",
+        "ASOBO_unique_id"
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extensions": {
+                "ASOBO_unique_id": {
+                    "id": "manhole-solid-1_LOD0"
+                }
+            },
+            "mesh": 0,
+            "name": "manhole-solid-1_LOD0"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "OPAQUE",
+            "doubleSided": false,
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "extras": {},
+            "name": "manhole-solid-1",
+            "normalTexture": {
+                "index": 0,
+                "scale": 1
+            },
+            "occlusionTexture": {
+                "index": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 2
+                },
+                "metallicFactor": 1,
+                "metallicRoughnessTexture": {
+                    "index": 1
+                },
+                "roughnessFactor": 1
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cylinder",
+            "primitives": [
+                {
+                    "attributes": {
+                        "COLOR_0": 0,
+                        "POSITION": 1,
+                        "NORMAL": 2,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "mimeType": "image/png",
+            "name": "jst_manhole-solid_1_normal",
+            "uri": "..\\texture\\jst_manhole-solid_1_normal.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "jst_manhole-solid_1_comp",
+            "uri": "..\\texture\\jst_manhole-solid_1_comp.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "jst_manhole-solid_1_baseColor",
+            "uri": "..\\texture\\jst_manhole-solid_1_baseColor.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5123,
+            "count": 160,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 160,
+            "max": [
+                0.375,
+                0.0015000001294538379,
+                0.375
+            ],
+            "min": [
+                -0.375,
+                -0.0015000001294538379,
+                -0.375
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 282,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1280,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1920,
+            "byteOffset": 1280,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1920,
+            "byteOffset": 3200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1280,
+            "byteOffset": 5120,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 564,
+            "byteOffset": 6400,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 6964,
+            "uri": "manhole-solid-1_LOD0.bin"
+        }
+    ]
+}
