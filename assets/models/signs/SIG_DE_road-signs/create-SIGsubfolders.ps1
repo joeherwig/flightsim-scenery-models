@@ -1,10 +1,11 @@
 param (
     [int]$chunkSize = $(Get-Random -Minimum -3 -Maximum 12),      # Number of files to download in each chunk
-    [int]$delaySeconds = $(Get-Random -Minimum -8 -Maximum 73)   # Delay between chunks in seconds
+    [int]$delaySeconds = $(Get-Random -Minimum -28 -Maximum 73)   # Delay between chunks in seconds
 )
 
 # Define the base folder where all SVGs and subfolders will be saved
 $baseFolder = $PSScriptRoot  # Change this to your desired base folder path
+
 
 # Create the base folder if it doesn't exist
 if (!(Test-Path -Path $baseFolder)) {
@@ -26,17 +27,17 @@ for ($i = 0; $i -lt $uncommentedUrls.Count; $i += $chunkSize) {
         $fileName = Split-Path $url -Leaf
         $fileNameWithoutExt = [System.IO.Path]::GetFileNameWithoutExtension($fileName)
 
+        # Define the subfolder structure
+        $signFolder = Join-Path -Path $baseFolder -ChildPath "SIG_DE-road-sign-$fileNameWithoutExt"
+        $blenderTextureFolder = Join-Path -Path $signFolder -ChildPath "blender-texture"
+        $msfsModelFolder = Join-Path -path $signFolder -ChildPath "msfs-model"
+        $msfsSignFolder = Join-Path -path $msfsModelFolder -ChildPath "SIG_DE-road-sign-$fileNameWithoutExt"
+
         # Download the SVG
         $svgDestination = Join-Path -Path $baseFolder -ChildPath $fileName
         try {
             Invoke-WebRequest -Uri $url -OutFile $svgDestination
             Write-Host "Downloaded: $fileName"
-
-            # Create the subfolder structure
-            $signFolder = Join-Path -Path $baseFolder -ChildPath "SIG_DE-road-sign-$fileNameWithoutExt"
-            $blenderTextureFolder = Join-Path -path $signFolder -ChildPath "blender-texture"
-            $msfsModelFolder = Join-Path -path $signFolder -ChildPath "msfs-model"
-            $msfsSignFolder = Join-Path -path $msfsModelFolder -ChildPath "SIG_DE-road-sign-$fileNameWithoutExt"
 
             # Create the subfolders
             if (!(Test-Path -Path $signFolder)) {
@@ -54,22 +55,24 @@ for ($i = 0; $i -lt $uncommentedUrls.Count; $i += $chunkSize) {
 
             # Convert SVG to PNG with the specified constraints
             $pngFileName = "jst-SIG-DE-RD-$fileNameWithoutExt.png"
-            $pngDestination = Join-Path -path $blenderTextureFolder -ChildPath $pngFileName
+            $pngDestination = Join-Path -Path $blenderTextureFolder -ChildPath $pngFileName
 
             # Use Inkscape (must be installed and in PATH) to convert SVG to PNG
             $inkscapePath = "inkscape"  # Ensure Inkscape is installed and in PATH
-            $command = "$inkscapePath --export-type=png --export-filename=`"$pngDestination`" --export-width=1024 --export-height=1024 `"$svgDestination`""
+            $command = "$inkscapePath --export-type=png --export-filename=`"$pngDestination`" --export-width=1024 `"$svgDestination`""
 
             try {
                 Invoke-Expression $command
                 Write-Host "Converted: $fileName to PNG"
+                move-Item -Path $svgDestination -Destination (Join-Path -Path $blenderTextureFolder -ChildPath $fileName)   
             }
             catch {
                 Write-Host "Failed to convert: $fileName to PNG"
             }
 
             # Comment out the URL in the markdown file
-            $urls = $urls -replace [$regex]::Escape($url), "//$url"
+            $urls = Get-Content -Path $filePath
+            $urls = $urls | ForEach-Object { if ($_ -eq $url) { "//$_" } else { $_ } }
             $urls | Out-File -FilePath $filePath -Encoding utf8 -Force
         }
         catch {
